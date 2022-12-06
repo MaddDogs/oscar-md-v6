@@ -36,8 +36,8 @@ global.websitex = "https://instagram.com/gaara_xploite" //ur website to be displ
 global.websitex1 = "https://github.com/gaara-ofc"
 global.botscript = 'https://github.com/gaara-ofc' //script link
 global.themeemoji = "🦄" //ur theme emoji
-global.packname = "Sticker By" //ur sticker watermark packname
-global.author = "Lolicu Bot" //ur sticker watermark author
+global.packname = "Created by Lolicu bot" //ur sticker watermark packname
+global.author = "Follow ig @gaara_xploite" //ur sticker watermark author
 global.wm = "Gaara ofc" //ur watermark
 
 // Other
