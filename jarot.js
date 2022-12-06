@@ -995,12 +995,12 @@ Type *give up* to surrender and admit defeat`
             }
             break
    	case 'sc': case 'script': case 'sourcecode': {
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nJangan Lupa Suscribe`
+teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nJangan Lupa Sub`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e7ee72c5f6dab71ee0639.jpg`},
+image: {url: `https://telegra.ph/file/40b4f98fa4df00d1ee2b0.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -1008,11 +1008,11 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"Mau Donasi? Ketik Owner",
-body: "Click to Suscribe", 
+body: "Click to follow", 
 thumbnail: fs.readFileSync("Media/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ',
-sourceUrl: "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ"
+mediaUrl: 'https://instagram.com/gaara_xploite',
+sourceUrl: "https://instagram.com/gaara_xploite"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: fkontak })
@@ -1024,7 +1024,7 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e7ee72c5f6dab71ee0639.jpg`},
+image: {url: `https://telegra.ph/file/40b4f98fa4df00d1ee2b0.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -1035,8 +1035,8 @@ title:"Mau Donasi? Ketik Owner",
 body: "Click to donasi", 
 thumbnail: fs.readFileSync("Media/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ',
-sourceUrl: "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ"
+mediaUrl: 'https://instagram.com/gaara_xploite',
+sourceUrl: "https://instagram.com/gaara_xploite"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: ftroli })
@@ -1334,12 +1334,12 @@ case 'rate': {
                 await XeonBotInc.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
-            case 'leavegc': {
+            case 'leavegc': case 'out': {
                 if (!isCreator) throw mess.owner
                 await XeonBotInc.groupLeave(m.chat).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
-            case 'setexif': {
+            case 'setexif': case 'exif': {
                if (!isCreator) throw mess.owner
                if (!text) throw `Example : ${prefix + command} packname|author`
           global.packname = text.split("|")[0]
@@ -1347,7 +1347,7 @@ case 'rate': {
           m.reply(`Exif has been successfully changed to\n\n⫹⫺ Packname : ${global.packname}\n⫹⫺ Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'kick': case 'k': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1379,7 +1379,7 @@ case 'rate': {
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-        case 'block': {
+        case 'block': case 'blok': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await XeonBotInc.updateBlockStatus(users, 'block').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
@@ -1407,7 +1407,7 @@ case 'rate': {
                 await XeonBotInc.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
             }
             break
-          case 'setbotpp': {
+          case 'setbotpp': case 'setppbot': {
                 if (!isCreator) throw mess.owner
                 if (!quoted) throw `Send/Reply Image With Caption ${prefix + command}`
                 if (!/image/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
@@ -1428,7 +1428,7 @@ case 'rate': {
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': {
+            case 'tagall': case 'tg': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1441,7 +1441,7 @@ let teks = `⊙─〔 ıll TᗩGᗩᒪᒪ llı 〕─⊙
                 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': {
+                case 'hidetag': case 'ht': case 'h': {
             if (!m.isGroup) throw mess.group
             if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
@@ -1764,7 +1764,7 @@ break
                 }
             }
             break
-            case 'delete': case 'del': {
+            case 'delete': case 'del': case 'd': {
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
                 if (!isBaileys) throw 'The message was not sent by a bot!'
@@ -2149,7 +2149,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': {
+            case 'owner': case 'creator': case 'gaara': case 'gar': {
                 XeonBotInc.sendContact(m.chat, global.owner, fkontak)
             }
             break
@@ -2579,7 +2579,7 @@ case 'tiktoknowm':
 			case 'tt':
 			    if (!text) return m.reply('𝘓𝘪𝘯𝘬 𝘕𝘺𝘢 𝘔𝘢𝘯𝘢??')
 				let p = await fdl.downloader.tiktok(q)
-				let nih = ` 𝘕𝘪𝘩 𝘒𝘢𝘬 𝘔𝘢𝘥𝘦 𝘉𝘺 ${author} 𝘑𝘢𝘯𝘨𝘢𝘯 𝘓𝘶𝘱𝘢 𝘚𝘶𝘴𝘤𝘳𝘪𝘣𝘦 https://www.youtube.com/@Jarotoffc`
+				let nih = ` 𝘕𝘪𝘩 𝘒𝘢𝘬 𝘔𝘢𝘥𝘦 𝘉𝘺 ${author} 𝐉𝐚𝐧𝐠𝐚𝐧 𝐥𝐮𝐩𝐚 𝐟𝐨𝐥𝐥𝐨𝐰 https://instagram.com/gaara_xploite`
 				let buttons = [
                     {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1}
                 ]
@@ -5702,7 +5702,7 @@ var requestPaymentMessage = generateWAMessageFromContent(num, proto.Message.from
 "currencyCodeIso4217": "IDR",
 "amount1000": "100",
 "extendedTextMessage": {
-"text": `MY DEVELOPER JAROT`,
+"text": `MY DEVELOPER GAARA`,
 }
 }}), { userJid: m.chat, quoted: doc})
 XeonBotInc.relayMessage(num, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -5723,7 +5723,7 @@ var requestPaymentMessage = generateWAMessageFromContent(num, proto.Message.from
 "currencyCodeIso4217": "IDR",
 "amount1000": "100",
 "extendedTextMessage": {
-"text": `MY DEVELOPER JAROT`,
+"text": `MY DEVELOPER GAARA`,
 }
 }}), { userJid: m.chat, quoted: doc})
 XeonBotInc.relayMessage(num, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -5772,7 +5772,9 @@ throw `Thanks to
 ┃⫹⫺ 𝚇𝚎𝚘𝚗
 ┃⫹⫺ 𝙹𝚊𝚛𝚘𝚝 𝙾𝚏𝚏𝚌
 ┃⫹⫺ 𝙾𝚜𝚌𝚊𝚛 𝚘𝚏𝚌
-┗═┅〔 *Made By Jarot* 〕┅═`
+┃⫹⫺ ī.am/𝘨𝘢𝘢𝘳𝘢
+┃⫹⫺ ᴍ   ᴀ   ʀ  κ  ツ
+┗═┅〔 *Made By Gaara* 〕┅═`
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
@@ -5836,7 +5838,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             break
             case 'command': {
 	const sections = [{
-								"title": "𝙾𝚜𝚌𝚊𝚛-𝙼𝚞𝚕𝚝𝚒𝙳𝚎𝚟𝚒𝚌𝚎",
+								"title": "𝐋𝐨𝐥𝐢𝐜𝐮-𝙼𝚞𝚕𝚝𝚒𝙳𝚎𝚟𝚒𝚌𝚎",
 								"rows": [
 									{
 										"title": "𝘔𝘦𝘯𝘶 𝘖𝘵𝘩𝘦𝘳",
@@ -5846,7 +5848,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 								]
 							},
 							{
-								"title": "𝙻𝚒𝚜𝚝 𝙾𝚜𝚌𝚊𝚛-𝙼𝚍️",
+								"title": "𝙻𝚒𝚜𝚝 𝐋𝐨𝐥𝐢𝐜𝐮 𝐁𝐨𝐭ོ️",
 								"rows": [
 									{
 										"title": "𝘚𝘦𝘮𝘶𝘢 𝘗𝘦𝘳𝘪𝘯𝘵𝘢𝘩",
@@ -5955,7 +5957,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 								"rows": [
 									{
 										"title": "Thanks To ❤️",
-										"description": "𝘑𝘢𝘯𝘨𝘢𝘯 𝘓𝘶𝘱𝘢 𝘚𝘶𝘴𝘤𝘳𝘪𝘣𝘦 𝘊𝘩𝘢𝘯𝘦𝘭 𝘑𝘢𝘳𝘰𝘵 𝘰𝘧𝘤",
+										"description": "𝐉𝐚𝐧𝐠𝐚𝐧 𝐥𝐮𝐩𝐚 𝐟𝐨𝐥𝐥𝐨𝐰 𝐢𝐠 𝐠𝐚𝐚𝐫𝐚𝐱𝐩𝐥𝐨𝐢𝐭𝐞",
 										"rowId": `${prefix}tqto`
 									}
 								]
@@ -5985,7 +5987,7 @@ let fot = `𝙽𝚘𝚝𝚎 𝙹𝚒𝚔𝚊 𝙼𝚎𝚗𝚎𝚖𝚞𝚔𝚊�
 `
 const listMessage = {
 footer: fot,
-text: 'Made By Jarot Offc',
+text: 'Made By Gaara Ofc',
 title: con,
 buttonText: `CLICK HERE ⎙`, 
 sections

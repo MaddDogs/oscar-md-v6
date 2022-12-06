@@ -14,31 +14,31 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['6285850539404'] //ur owner number
-global.ownername = "Jarot Offc" //ur owner name
-global.developer = "Jarot Offc" //nama lu
-global.ytname = "YT: Jarot offc" //ur yt chanel name
-global.socialm = "https://instagram.com/jarotr_" //ur github or insta name
-global.sgc = "https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL"
-global.location = "Jatim" //ur location
+global.vcardowner = ['201507384088'] //ur owner number
+global.ownername = "ī.am/𝘨𝘢𝘢𝘳𝘢" //ur owner name
+global.developer = "ᴍ   ᴀ   ʀ  κ" //nama lu
+global.ytname = "YT: Gaara ofc" //ur yt chanel name
+global.socialm = "https://instagram.com/gaara_xploite" //ur github or insta name
+global.sgc = "https://chat.whatsapp.com/GDKxPYbbXTTCS5imSgFi3h"
+global.location = "Jateng" //ur location
 
 //bot bomdy 
-global.owner = ['6285850539404'] //ur number
-global.ownernomer = "6285850539404" //ur number
-global.ownertag = '6285850539404' //ur tag number
-global.premium = ['6285850539404'] //ur premium number
-global.botname = '𝘖𝘴𝘤𝘢𝘳-𝘔𝘥' //ur bot name
-global.ownername = "𝘑𝘢𝘳𝘰𝘵 𝘖𝘧𝘧𝘤"
-global.linkz = "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ" //your theme url which will be displayed on whatsapp
-global.dana = "6285850539404"
-global.pulsa = "6285850539404"
-global.websitex = "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ" //ur website to be displayed
-global.websitex1 = "https://youtube.com/shorts/N6cPd_V-IME?feature=share"
-global.botscript = 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ' //script link
+global.owner = ['201507384088'] //ur number
+global.ownernomer = "201507384088" //ur number
+global.ownertag = '201507384088' //ur tag number
+global.premium = ['201507384088'] //ur premium number
+global.botname = '𝐋𝐨𝐥𝐢𝐜𝐮 𝐁𝐨𝐭' //ur bot name
+global.ownername = "ī.am/𝘨𝘢𝘢𝘳𝘢 𝘖𝘧𝘧𝘤"
+global.linkz = "https://youtube.com/gaaraofc" //your theme url which will be displayed on whatsapp
+global.dana = "6281326024103"
+global.pulsa = "6281326024103"
+global.websitex = "https://instagram.com/gaara_xploite" //ur website to be displayed
+global.websitex1 = "https://github.com/gaara-ofc"
+global.botscript = 'https://github.com/gaara-ofc' //script link
 global.themeemoji = "🦄" //ur theme emoji
 global.packname = "Sticker By" //ur sticker watermark packname
-global.author = "Oscar Bot" //ur sticker watermark author
-global.wm = "Jarot ofc" //ur watermark
+global.author = "Lolicu Bot" //ur sticker watermark author
+global.wm = "Gaara ofc" //ur watermark
 
 // Other
 global.sessionName = 'Session'
@@ -46,8 +46,8 @@ global.prefa = ['','!','.','#','&']
 global.sp = ''
 global.mess = {
     success: 'Done✓',
-    admin: '𝘏𝘢𝘯𝘺𝘢 𝘉𝘪𝘴𝘢 𝘥𝘪 𝘎𝘶𝘯𝘢𝘬𝘢𝘯 𝘖𝘭𝘦𝘩 𝘈𝘥𝘮𝘪𝘯 𝘛𝘰𝘥!!',
-    botAdmin: '𝘉𝘰𝘵 𝘉𝘶𝘬𝘢𝘯 𝘈𝘥𝘮𝘪𝘯 𝘤𝘰𝘬',
+    admin: '𝘏𝘢𝘯𝘺𝘢 𝘉𝘪𝘴𝘢 𝘥𝘪 𝘎𝘶𝘯𝘢𝘬𝘢𝘯 𝘖𝘭𝘦𝘩 𝘈𝘥𝘮𝘪𝘯!!',
+    botAdmin: '𝘉𝘰𝘵 𝘉𝘶𝘬𝘢𝘯 𝘈𝘥𝘮𝘪𝘯',
     premime: '𝘏𝘢𝘯𝘺𝘢 𝘉𝘪𝘴𝘢 𝘥𝘪 𝘎𝘶𝘯𝘢𝘬𝘢𝘯 𝘜𝘴𝘦𝘳 𝘗𝘳𝘦𝘮𝘪𝘶𝘮!',
     owner: '𝘏𝘢𝘯𝘺𝘢 𝘉𝘪𝘴𝘢 𝘥𝘪 𝘎𝘶𝘯𝘢𝘬𝘢𝘯 𝘰𝘭𝘦𝘩 𝘖𝘸𝘯𝘦𝘳!',
     group: '𝘏𝘢𝘯𝘺𝘢 𝘉𝘪𝘴𝘢 𝘋𝘪 𝘨𝘶𝘯𝘢𝘬𝘢𝘯 𝘋𝘪 𝘎𝘳𝘰𝘶𝘱',
