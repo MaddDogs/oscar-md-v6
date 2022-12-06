@@ -18,7 +18,7 @@
     "multi-device",
     "xeon-bot-inc"
   ],
-  "author": "Jarot",
+  "author": "Gaara",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
